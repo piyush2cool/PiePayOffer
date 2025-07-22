@@ -1,0 +1,8 @@
+com\piepay\flipkartoffers\dto\OfferResponseDto.class
+com\piepay\flipkartoffers\service\OfferService.class
+com\piepay\flipkartoffers\dto\OfferRequestDto.class
+com\piepay\flipkartoffers\entity\Offer.class
+com\piepay\flipkartoffers\repository\OfferRepository.class
+com\piepay\flipkartoffers\FlipkartOffersApplication.class
+com\piepay\flipkartoffers\entity\Offer$OfferBuilder.class
+com\piepay\flipkartoffers\controller\OfferController.class
