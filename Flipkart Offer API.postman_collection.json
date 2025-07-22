@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "68e8f33d-3455-467d-9be5-e8580e3ec3a9",
+		"name": "Flipkart Offer API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27990019"
+	},
+	"item": [
+		{
+			"name": "POST /api/offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"flipkartOfferApiResponse\": {\n    \"offers\": [\n      {\n        \"title\": \"10% off with Axis Bank\",\n        \"bankName\": \"AXIS\",\n        \"type\": \"CREDIT\",\n        \"minTxnAmount\": 5000,\n        \"maxDiscountAmount\": 500,\n        \"discountPercent\": 10,\n        \"paymentOptions\": [\"CREDIT\"]\n      },\n      {\n        \"title\": \"5% Cashback with IDFC EMI\",\n        \"bankName\": \"IDFC\",\n        \"type\": \"EMI_OPTIONS\",\n        \"minTxnAmount\": 7000,\n        \"maxDiscountAmount\": 400,\n        \"discountPercent\": 5,\n        \"paymentOptions\": [\"EMI_OPTIONS\"]\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/offer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"offer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST /api/offer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"flipkartOfferApiResponse\": {\n    \"offers\": [\n      {\n        \"title\": \"10% off with Axis Bank\",\n        \"bankName\": \"AXIS\",\n        \"type\": \"CREDIT\",\n        \"minTxnAmount\": 5000,\n        \"maxDiscountAmount\": 500,\n        \"discountPercent\": 10,\n        \"paymentOptions\": [\"CREDIT\"]\n      },\n      {\n        \"title\": \"5% Cashback with IDFC EMI\",\n        \"bankName\": \"IDFC\",\n        \"type\": \"EMI_OPTIONS\",\n        \"minTxnAmount\": 7000,\n        \"maxDiscountAmount\": 400,\n        \"discountPercent\": 5,\n        \"paymentOptions\": [\"EMI_OPTIONS\"]\n      }\n    ]\n  }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/offer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"offer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Jul 2025 19:09:23 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"noOfOffersIdentified\": 2,\n    \"noOfNewOffersCreated\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "GET /api/highest-discount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/highest-discount?amountToPay=10000&bankName=AXIS&paymentInstrument=CREDIT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"highest-discount"
+					],
+					"query": [
+						{
+							"key": "amountToPay",
+							"value": "10000"
+						},
+						{
+							"key": "bankName",
+							"value": "AXIS"
+						},
+						{
+							"key": "paymentInstrument",
+							"value": "CREDIT"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /api/highest-discount",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/highest-discount?amountToPay=10000&bankName=AXIS&paymentInstrument=CREDIT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"highest-discount"
+							],
+							"query": [
+								{
+									"key": "amountToPay",
+									"value": "10000"
+								},
+								{
+									"key": "bankName",
+									"value": "AXIS"
+								},
+								{
+									"key": "paymentInstrument",
+									"value": "CREDIT"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 22 Jul 2025 19:09:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"highestDiscountAmount\": 500\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
