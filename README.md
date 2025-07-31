@@ -113,10 +113,3 @@ To handle 1,000+ requests/sec:
 - Move static offer data to ElasticSearch for faster querying.
 
 ---
-
-## 📌 Improvements (if more time)
-
-- Add unit and integration tests.
-- Use PostgreSQL or MongoDB in production.
-- Add expiry dates and advanced validation.
-- Swagger/OpenAPI documentation.
