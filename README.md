@@ -103,13 +103,3 @@ GET /api/highest-discount?amountToPay=10000&bankName=AXIS&paymentInstrument=CRED
 - **JPA**: For database interactions.
 
 ---
-
-## 📈 Scaling Thoughts
-
-To handle 1,000+ requests/sec:
-- Add caching for GET endpoint (e.g., Redis).
-- Load balance multiple instances behind an API Gateway.
-- Use a dedicated relational DB with indexing.
-- Move static offer data to ElasticSearch for faster querying.
-
----
